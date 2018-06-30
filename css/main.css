@@ -1,0 +1,297 @@
+body,html{
+overflow-x: hidden
+}
+h1, h2{
+    margin: 0 auto;
+}
+h3{
+    font-size: 24px;
+}
+ul{
+    margin: 0;
+    list-style: none;
+}
+p{      /*正文*/
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+button:hover{
+    cursor: pointer;
+}
+header{
+    background: rgba(0, 0, 0, 0.4);
+}
+nav{
+    background: transparent; /*透明*/
+    height: 45px;
+}
+#banner{
+    height: 550px;
+    background: transparent; 
+    color: #fff;
+}
+nav ul{
+    float: right;
+}
+nav .logo{
+    display: inline-block;
+    line-height: 45px;
+    float: left;
+    margin-left: 20px;
+
+}
+nav ul li{
+    display: inline-block;
+    line-height: 45px;
+    float: left;
+    margin-right: 20px;
+}
+nav ul li a{
+    text-decoration: none;
+    line-height: 45px;
+    display: inline-block;
+    /* height: 45px; */
+    height: inherit;  /*继承*/
+    color: #fff;
+}
+nav ul li.logo{
+    float: left;
+}
+#banner .inner{
+    max-width: 300px;
+    text-align: center;
+    margin: 0 auto;
+    position: relative;
+    top: 100px;
+}
+#banner .inner h1{
+    width: 150px;
+    padding: 10px;
+    border-top: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+}
+button{
+    border-radius: 2px;
+    border: none;
+    background: rgb(219, 72, 27);
+    color: #eee;
+    padding: 10px;
+}
+#banner .inner button{
+    padding: 10px 40px;
+}
+#banner .inner .more{
+    margin-top: 160px;
+}
+.sub-heading{
+    line-height: 30px;
+    margin:  25px 0;
+    font-size: 18px;
+}
+.logo{
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 2px;  /*文字间的空间*/
+}
+.logo a{
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    line-height: 45px;
+}
+/************ green  ****************/
+.green{
+    text-align: center;
+    background: rgb(12, 151, 151);
+    color: #fff;
+}
+.wrapper{
+    width: 800px;
+    margin: 0 auto;
+    padding: 30px 0;
+}
+.hr{                   /*横线默认样式*/
+    width: 100%;
+    height: 2px;
+    margin: 20px auto;
+}
+.green .hr{
+    width: 60%;
+    background: rgb(9, 129, 129);
+}
+.green .icon-group{
+    margin: 60px;
+}
+.green .icon-group .icon{
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    border: 1px solid rgb(3, 117, 133);
+    transform: rotate(45deg);
+    margin: 20px;
+}
+.green .icon-group i{
+    margin: 16px;
+   transform: rotate(-45deg);
+}
+.green .icon-group .icon:first-child{
+    color: rgb(3, 206, 206);
+}
+.green .icon-group .icon:nth-child(2){
+    color: aqua;
+}
+.green .icon-group .icon:nth-child(3){
+    color: rgb(112, 185, 185);
+}
+/********* gray ***********/
+.gray{           /*  不设置高度，让内容撑开，较灵活 */        
+    background: #252f34;
+    color: #fff;           
+} 
+.gray .article-preview > div{
+    float: left;
+    font-size: 0;       /* 这样才可以让两个div紧靠 */
+}
+.gray .article-preview:nth-child(odd){
+    background: rgba(255, 255, 255, 0.05);
+}
+.gray .article-preview::after{ /*清除浮动*/
+    content: "";
+    display: block;
+    clear: both;
+}
+.gray .img-section{
+    width: 45%;
+}
+.gray .img-section img{
+    width: 100%;
+}
+.gray .text-section{
+    width: 55%;
+    position: relative;
+    top: 68px;
+    left: 50px;
+}
+.gray .text-section > *{  /*限制里面的东西，不让他溢出容器*/
+    max-width: 90%;
+}
+.gray .text-section h2{
+    margin-bottom: 20px;
+}
+.gray .text-section .sub-heading{
+    font-size: 22px;
+    margin-top: 0;
+}
+.gray .text-section p{
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+/*****    purple   ******/
+.purple{
+    background: #3f3965;
+    color: #fff;
+    padding: 80px;
+}
+.purple .wrapper .heading-wrapper{
+    text-align: center;
+}
+.purple .wrapper .heading-wrapper .hr{
+    background-color: #373259;
+    width: 60%;
+}
+.purple .card{
+    width: 50%;
+    float: left;
+    -webkit-borderbox:border-box;
+    box-sizing: border-box;
+    height: 300px;
+    padding: 50px;
+}
+.purple .card:first-child{
+    background:  rgba(0, 0, 0, 0.06)
+}
+.purple .card:nth-child(2){
+    background:  rgba(0, 0, 0, 0.10)
+}
+.purple .card:nth-child(3){
+    background:  rgba(0, 0, 0, 0.14)
+}
+.purple .card:nth-child(4){
+    background:  rgba(0, 0, 0, 0.18)
+}
+.purple .card:nth-child(5){
+    background:  rgba(0, 0, 0, 0.22)
+}
+.purple .card:nth-child(6){
+    background:  rgba(0, 0, 0, 0.26)
+}
+/*********   页脚       ***********/
+footer{
+    color: #fff;
+    min-height: 200px;
+    text-align: center;
+}
+footer .love-wrapper{
+    background: rgba(33, 33, 33, 0.6);
+}
+footer .love{
+    margin: 0 280px;
+    min-height: 200px;
+    padding: 50px 0;
+    box-sizing: border-box;
+}
+footer .love > div{
+    float: left;
+}
+footer .love::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+footer .love .left{
+    width: 65%;
+}
+footer .love .right{
+    width: 35%;
+}
+footer .love .right button{
+    display: block;
+    margin: 0 auto 30px;
+    padding: 10px 50px;
+}
+
+
+
+
+footer .share-wrapper{
+    background:rgba(33, 33, 33, 0.8);
+}
+
+footer ul.share-group{
+    width: 1080px;
+    margin: 0 auto;
+    padding: 50px;
+}
+footer ul.share-group{
+    display: inline-block;
+}
+footer ul.share-group li{
+    display: inline-block;
+    padding: 10px;
+}
+footer .copy{
+    padding-bottom: 50px;
+}
+.main-wrapper{
+    background: #444 url(../img/dog1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /*背景图片固定*/
+    background-position: center center;
+}
